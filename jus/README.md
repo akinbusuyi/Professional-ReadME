@@ -18,7 +18,7 @@ N/A
 ## Languages & Dependencies
 inquirer 
 ## How to Use This Application:
-N/A
+You can use this applicaiton by running node index.js
 ## Contributors
 N/A
 ## Testing
