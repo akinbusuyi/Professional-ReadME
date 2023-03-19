@@ -66,6 +66,7 @@ const questions = [ {
   name: "Question"
 }
 
+
 ];
 
 // function to write README file
@@ -74,16 +75,17 @@ inquirer.prompt(questions).then(function(response) {
   
    var content = generateMarkdown(response);
    console.log(content);
-    fs.writeFile("Professional-ReadME/README.md", content, function(err){
+    fs.writeFile("../ReadMe.md", content, function(err){
         if (err) throw err
         console.log("success");
     });
-  } ); 
-
+} ); 
 // function to initialize program
 function init() {
 
 }
 
+// function call to initialize program
+init();
 // function call to initialize program
 init();
