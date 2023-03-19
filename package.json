@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/akinbusuyi/Professional-ReadME.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,6 +17,6 @@
   },
   "homepage": "https://github.com/akinbusuyi/Professional-ReadME#readme",
   "dependencies": {
-    "inquirer": "^9.1.5"
+    "inquirer": "^6.3.1"
   }
 }

@@ -4,7 +4,7 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = [  {
+const questions = [ {
   type: "input",
   message: "What is the title of your repository?",
   name: "title"
@@ -66,12 +66,19 @@ const questions = [  {
   name: "Question"
 }
 
-
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+inquirer.prompt(questions).then(function(response) {
+  console.log(response);
+  
+   var content = generateMarkdown(response);
+   console.log(content);
+    fs.writeFile("Professional-ReadME/README.md", content, function(err){
+        if (err) throw err
+        console.log("success");
+    });
+  } ); 
 
 // function to initialize program
 function init() {
